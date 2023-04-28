@@ -24,8 +24,17 @@ ts.setup {
     "css",
     "html",
     "lua",
-    "python"
+    "python",
+    "c",
+    "javascript"
   },
+  highlight = {
+		enable = true, -- false will disable the whole extension
+	},
+  autopairs = {
+		enable = true,
+	},
+	indent = { enable = true },
   autotag = {
     enable = true,
   },
