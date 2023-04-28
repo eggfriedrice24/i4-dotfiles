@@ -7,6 +7,12 @@ vim.opt.fileencoding = "utf-8"
 local options = {
   backup = false,
   title = true,
+  cursorline = true,
+  termguicolors = true,
+  winblend = 0,
+  wildoptions = 'pum',
+  pumblend = 5,
+  background = 'dark',
   clipboard = "unnamedplus",
   cmdheight = 1,
   completeopt = { "menuone", "noselect" },
@@ -46,6 +52,14 @@ local options = {
 for k, v in pairs(options) do
   vim.opt[k] = v
 end
+
+-- highlight yanked text for 200ms using the "Visual" highlight group
+vim.cmd [[
+  augroup highlight_yank
+  autocmd!
+  au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=100})
+  augroup END
+]]
 
 vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
