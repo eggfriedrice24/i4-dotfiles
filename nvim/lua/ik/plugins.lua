@@ -43,6 +43,18 @@ return packer.startup(function(use)
   use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
 
   use { "catppuccin/nvim", requires = { 'tjdevries/colorbuddy.nvim' }, as = "catppuccin" } -- colorscheme
+  use { 'akinsho/nvim-bufferline.lua' }
+
+  use { 'windwp/nvim-autopairs' } -- automatically close brackets
+  use { 'windwp/nvim-ts-autotag' }
+  use { 'numToStr/Comment.nvim',
+    requires = {
+      'JoosepAlviste/nvim-ts-context-commentstring'
+    }
+  }
+  use { 'norcalli/nvim-colorizer.lua' }
+
+  use { "kyazdani42/nvim-tree.lua" }
 
   -- cmp (completion plugins)
   use { "hrsh7th/nvim-cmp" } -- The completion plugin
@@ -60,9 +72,17 @@ return packer.startup(function(use)
   use {'glepnir/lspsaga.nvim' } -- LSP UIs
   use { "RRethy/vim-illuminate" }
 
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+  }
+
   -- Telescope
-  use 'nvim-telescope/telescope.nvim'
-  use 'nvim-telescope/telescope-file-browser.nvim'
+  use { 'nvim-telescope/telescope.nvim' }
+  use { 'nvim-telescope/telescope-file-browser.nvim' }
+
+  use { 'lewis6991/gitsigns.nvim' }
+  use { 'dinhhuy258/git.nvim' } -- For git blame & browse
 
   -- snippets
   use { "L3MON4D3/LuaSnip" } --snippet engine
@@ -73,6 +93,8 @@ return packer.startup(function(use)
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
   }) -- markdown-preview
+
+  use { 'folke/zen-mode.nvim' }
 
   use { 'kyazdani42/nvim-web-devicons' } -- File icons
 end)
