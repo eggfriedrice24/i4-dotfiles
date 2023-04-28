@@ -42,17 +42,37 @@ return packer.startup(function(use)
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
   use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
 
-  use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
-  } -- colorscheme
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use { "catppuccin/nvim", requires = { 'tjdevries/colorbuddy.nvim' }, as = "catppuccin" } -- colorscheme
 
+  -- cmp (completion plugins)
+  use { "hrsh7th/nvim-cmp" } -- The completion plugin
+  use { "hrsh7th/cmp-buffer" } -- buffer completions
+  use { "hrsh7th/cmp-path" } -- path completions
+	use { "saadparwaiz1/cmp_luasnip" } -- snippet completions
+	use { "hrsh7th/cmp-nvim-lsp" }
+	use { "hrsh7th/cmp-nvim-lua" }
 
+  -- Language Server Protocol
+  use { "neovim/nvim-lspconfig" } -- enable LSP
+  use { "williamboman/mason.nvim"} -- simple to use language server installer
+  use { "williamboman/mason-lspconfig.nvim" }
+	use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
+  use {'glepnir/lspsaga.nvim' } -- LSP UIs
+  use { "RRethy/vim-illuminate" }
+
+  -- Telescope
+  use 'nvim-telescope/telescope.nvim'
+  use 'nvim-telescope/telescope-file-browser.nvim'
+
+  -- snippets
+  use { "L3MON4D3/LuaSnip" } --snippet engine
+  use { "rafamadriz/friendly-snippets" } -- a bunch of snippets to use
 
 
   use({
     "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
-  })
+  }) -- markdown-preview
+
+  use { 'kyazdani42/nvim-web-devicons' } -- File icons
 end)
