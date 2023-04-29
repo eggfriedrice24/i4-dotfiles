@@ -8,6 +8,7 @@ local options = {
   backup = false,
   title = true,
   cursorline = true,
+  hlsearch = false,
   termguicolors = true,
   winblend = 0,
   wildoptions = 'pum',
