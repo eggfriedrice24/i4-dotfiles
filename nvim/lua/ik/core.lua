@@ -18,7 +18,6 @@ local options = {
   cmdheight = 1,
   completeopt = { "menuone", "noselect" },
   conceallevel = 0,
-  hlsearch = true,                       
   ignorecase = true,
   pumheight = 10,
   showmode = false,
