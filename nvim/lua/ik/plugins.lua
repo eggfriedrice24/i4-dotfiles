@@ -70,6 +70,8 @@ return packer.startup(function(use)
   use { "hrsh7th/cmp-nvim-lsp" }
   use { "hrsh7th/cmp-nvim-lua" }
 
+  use { "github/copilot.vim" } -- copilot ai
+
   -- Language Server Protocol
   use { "neovim/nvim-lspconfig" }           -- enable LSP
   use { "williamboman/mason.nvim" }         -- simple to use language server installer
