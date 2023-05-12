@@ -46,11 +46,11 @@ telescope.load_extension("file_browser")
 vim.keymap.set('n', '<C-p>',
   function()
     builtin.find_files({
-      no_ignore = false,
-      hidden = true
+      hidden = true,
+      no_ignore = true,
     })
   end)
-vim.keymap.set('n', '<C-S-F>', function()
+vim.keymap.set('n', 'ft', function()
   builtin.live_grep()
 end)
 vim.keymap.set('n', '\\\\', function()

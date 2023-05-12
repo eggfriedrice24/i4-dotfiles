@@ -60,8 +60,6 @@ return packer.startup(function(use)
   }
   use { 'norcalli/nvim-colorizer.lua' }
 
-  use { "kyazdani42/nvim-tree.lua" }
-
   -- cmp (completion plugins)
   use { "hrsh7th/nvim-cmp" }         -- The completion plugin
   use { "hrsh7th/cmp-buffer" }       -- buffer completions
