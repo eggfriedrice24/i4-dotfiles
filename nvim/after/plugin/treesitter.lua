@@ -26,15 +26,12 @@ ts.setup {
     "lua",
     "python",
     "c",
-    "javascript"
+    "javascript",
+    "prisma",
   },
-  highlight = {
-		enable = true, -- false will disable the whole extension
-	},
   autopairs = {
-		enable = true,
-	},
-	indent = { enable = true },
+    enable = true,
+  },
   autotag = {
     enable = true,
   },
