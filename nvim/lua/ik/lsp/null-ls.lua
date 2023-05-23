@@ -15,13 +15,14 @@ end
 null_ls.setup {
   sources = {
     null_ls.builtins.formatting.prettierd,
+    null_ls.builtins.code_actions.eslint_d,
     null_ls.builtins.diagnostics.eslint_d.with({
       diagnostics_format = '[eslint] #{m}\n(#{c})'
     }),
     null_ls.builtins.diagnostics.fish
   },
   on_attach = function(client, bufnr)
-    if client.supports_method("textDocument/formatting") then
+    if client.supports_method("textDocument/formatting") or client.supports_method('textDocument/codeAction') then
       vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
       vim.api.nvim_create_autocmd("BufWritePre", {
         group = augroup,
@@ -41,3 +42,12 @@ vim.api.nvim_create_user_command(
   end,
   { nargs = 0 }
 )
+
+vim.api.nvim_create_user_command(
+  'EslintFix',
+  function()
+    vim.cmd('!npx eslint --fix %')
+  end,
+  { nargs = 0 }
+)
+
