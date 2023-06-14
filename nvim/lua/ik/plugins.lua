@@ -42,10 +42,11 @@ return packer.startup(function(use)
   use { "wbthomason/packer.nvim" } -- Have packer manage itself
   use { "nvim-lua/plenary.nvim" }  -- Useful lua functions used by lots of plugins
 
-  use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
-  }
+  -- use {
+  -- 'svrana/neosolarized.nvim',
+  -- requires = { 'tjdevries/colorbuddy.nvim' }
+  -- }
+  use { 'kwsp/halcyon-neovim' }
   use { 'nvim-lualine/lualine.nvim' }
 
   --  use { "catppuccin/nvim", requires = { 'tjdevries/colorbuddy.nvim' }, as = "catppuccin" } -- colorscheme

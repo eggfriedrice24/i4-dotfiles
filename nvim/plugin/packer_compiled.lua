@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["colorbuddy.nvim"] = {
-    loaded = true,
-    path = "/home/ikako/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
-    url = "https://github.com/tjdevries/colorbuddy.nvim"
-  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -133,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["halcyon-neovim"] = {
+    loaded = true,
+    path = "/home/ikako/.local/share/nvim/site/pack/packer/start/halcyon-neovim",
+    url = "https://github.com/kwsp/halcyon-neovim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,
@@ -158,11 +158,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
-  },
-  ["neosolarized.nvim"] = {
-    loaded = true,
-    path = "/home/ikako/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
-    url = "https://github.com/svrana/neosolarized.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
