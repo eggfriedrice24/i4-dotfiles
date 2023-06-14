@@ -46,10 +46,10 @@ return packer.startup(function(use)
   -- 'svrana/neosolarized.nvim',
   -- requires = { 'tjdevries/colorbuddy.nvim' }
   -- }
-  use { 'kwsp/halcyon-neovim' }
+  -- use { 'kwsp/halcyon-neovim' }
   use { 'nvim-lualine/lualine.nvim' }
 
-  --  use { "catppuccin/nvim", requires = { 'tjdevries/colorbuddy.nvim' }, as = "catppuccin" } -- colorscheme
+  use { "catppuccin/nvim", requires = { 'tjdevries/colorbuddy.nvim' }, as = "catppuccin" } -- colorscheme
   use { 'akinsho/nvim-bufferline.lua' }
 
   use { 'windwp/nvim-autopairs' } -- automatically close brackets
