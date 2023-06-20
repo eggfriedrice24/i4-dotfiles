@@ -84,11 +84,6 @@ _G.packer_plugins = {
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/home/ikako/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -113,11 +108,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
-  },
-  ["colorbuddy.nvim"] = {
-    loaded = true,
-    path = "/home/ikako/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
-    url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
   ["copilot.vim"] = {
     loaded = true,
@@ -228,6 +218,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/prettier.nvim",
     url = "https://github.com/MunifTanjim/prettier.nvim"
+  },
+  ["rose-pine"] = {
+    loaded = true,
+    path = "/home/ikako/.local/share/nvim/site/pack/packer/start/rose-pine",
+    url = "https://github.com/rose-pine/neovim"
   },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
