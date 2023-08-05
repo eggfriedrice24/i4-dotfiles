@@ -1,5 +1,3 @@
--- This file can be loaded by calling `lua require('plugins')` from your init.vim
-
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
@@ -11,6 +9,8 @@ return require('packer').startup(function(use)
   'nvim-telescope/telescope.nvim', tag = '0.1.2',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
+
+  use 'nvim-telescope/telescope-file-browser.nvim'
 
   use({ 'rose-pine/neovim', as = 'rose-pine' })
 
@@ -40,4 +40,20 @@ return require('packer').startup(function(use)
   }
 }
 
+    use 'jose-elias-alvarez/null-ls.nvim'
+
+    use 'windwp/nvim-ts-autotag'
+    use 'windwp/nvim-autopairs'
+
+    use 'lewis6991/gitsigns.nvim'
+    use 'dinhhuy258/git.nvim' -- For git blame & browse
+
+    use 'github/copilot.vim'
+
+    use 'kyazdani42/nvim-web-devicons'
+
+    use 'L3MON4D3/LuaSnip'
+
+    use 'nvim-lualine/lualine.nvim'
+    use 'akinsho/nvim-bufferline.lua'
   end)
