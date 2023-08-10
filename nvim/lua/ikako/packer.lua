@@ -39,8 +39,10 @@ return require('packer').startup(function(use)
     {'L3MON4D3/LuaSnip'},     -- Required
   }
 }
+    use 'onsails/lspkind-nvim' -- vscode-like pictograms
+    use                       'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
 
-    use 'jose-elias-alvarez/null-ls.nvim'
+    use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
 
     use 'windwp/nvim-ts-autotag'
     use 'windwp/nvim-autopairs'
