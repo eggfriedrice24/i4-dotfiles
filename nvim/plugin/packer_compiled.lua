@@ -114,6 +114,11 @@ _G.packer_plugins = {
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
     url = "https://github.com/tjdevries/colorbuddy.nvim"
   },
+  colorschemes = {
+    loaded = true,
+    path = "/home/ikako/.local/share/nvim/site/pack/packer/start/colorschemes",
+    url = "https://github.com/lunarvim/colorschemes"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -133,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ikako/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
+  ["halcyon-neovim"] = {
+    loaded = true,
+    path = "/home/ikako/.local/share/nvim/site/pack/packer/start/halcyon-neovim",
+    url = "https://github.com/kwsp/halcyon-neovim"
   },
   ["lspsaga.nvim"] = {
     loaded = true,

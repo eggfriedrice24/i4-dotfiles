@@ -46,6 +46,11 @@ return packer.startup(function(use)
     'svrana/neosolarized.nvim',
     requires = { 'tjdevries/colorbuddy.nvim' }
   }
+
+  use { 'lunarvim/colorschemes' }
+
+  use { 'kwsp/halcyon-neovim' }
+
   -- use({ 'rose-pine/neovim', as = 'rose-pine' })
   -- use { 'kwsp/halcyon-neovim' }
   use { 'nvim-lualine/lualine.nvim' }
